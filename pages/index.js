@@ -34,7 +34,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                    className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-2"
                     href="/williamChalkResume.pdf"
                     download
                   >
@@ -76,6 +76,7 @@ export default function Home() {
                 <Image
                   src="/Monied-1.JPG"
                   alt="monied home page"
+                  className="sm:w-100"
                   width={1500}
                   height={1500}
                 />
@@ -115,6 +116,7 @@ export default function Home() {
                   alt="deep thoughts home page"
                   width={1500}
                   height={1500}
+                  className="sm:w-100"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                   Deep Thoughts
@@ -151,6 +153,7 @@ export default function Home() {
                   alt="my ultimate sports tracker home page"
                   width={1500}
                   height={1500}
+                  className="sm:w-100"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                   My Ultimate Sports Tracker
@@ -187,6 +190,7 @@ export default function Home() {
                   alt="carolina clovers home page"
                   width={1500}
                   height={1500}
+                  className="sm:w-100 h-100"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                   Carolina Clovers
