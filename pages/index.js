@@ -186,35 +186,33 @@ export default function Home() {
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:shadow-white">
                 <Image
-                  src="/myultimatesportstracker-2.JPG"
+                  src="/pizzaHunt.JPG"
                   alt="carolina clovers home page"
                   width={1500}
                   height={1500}
                   className="sm:w-100 h-100"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                  Carolina Clovers
+                  Pizza Hunt
                 </h3>
                 <p className="py-2 dark:text-white">
-                  Sports team page for little league team, Which allows an Admin
-                  to upload announcements and images.
+                  A site for users to discuss their favorite types of pizza and
+                  share ideas and thoughts on new pizzas, MongoDB was the
+                  Database used and Mongoose for the ORM.
                 </p>
                 <h4 className="py-4 text-teal-600">Technologies Used</h4>
-                <p className="text-gray-800 dark:text-white">React</p>
+                <p className="text-gray-800 dark:text-white">Mongoose ORM</p>
                 <p className="text-gray-800 dark:text-white">Node.js</p>
-                <p className="text-gray-800 dark:text-white">GraphQL</p>
+                <p className="text-gray-800 dark:text-white">MongoDB</p>
                 <p className="text-gray-800 dark:text-white">BootStrap</p>
-                <p className="text-gray-800 dark:text-white">
-                  JWT Authentication
-                </p>
                 <p className="float-left text-teal-600">
-                  <a href="https://william-chalk.github.io/My-Ultimate-Sports-Tracker/">
+                  <a href="https://young-earth-15612.herokuapp.com/add-pizza">
                     <BsGlobe />
                     View Live
                   </a>
                 </p>
                 <p className="float-right text-teal-600">
-                  <a href="https://github.com/william-chalk/My-Ultimate-Sports-Tracker">
+                  <a href="https://github.com/william-chalk/pizza-hunt">
                     <BsGithub />
                     View Repo
                   </a>
