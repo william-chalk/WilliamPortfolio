@@ -5,12 +5,6 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsLinkedin, BsGithub, BsGlobe } from "react-icons/bs";
-import deepthoughtsone from "../public/DeepThoughts-1.JPG";
-import deepthoughtstwo from "../public/DeepThoughts-2.JPG";
-import moniedone from "../public/Monied-1.JPG";
-import moniedtwo from "../public/Monied-2.JPG";
-import ultimateone from "../public/myultimatesportstracker-1.JPG";
-import ultimatetwo from "../public/myultimatesportstracker-2.JPG";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +32,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    className="bg-gradient-to-r from-cyan-1500 to-teal-1500 text-white px-4 py-2 rounded-md ml-8"
                     href="#"
                   >
                     Resume
@@ -72,7 +66,12 @@ export default function Home() {
             </div>
             <div className="lg:grid-cols-4">
               <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
-                <Image src={moniedone} alt="monied home page" />
+                <Image
+                  src="/Monied-1.JPG"
+                  alt="monied home page"
+                  width={1500}
+                  height={1500}
+                />
                 <h3 className="text-lg font-medium pt-8 pb-2">Monied</h3>
                 <p className="py-2">
                   Monied is a fundraising platform for nonprofit organizations.
@@ -100,7 +99,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
-                <Image src={deepthoughtsone} alt="deep thoughts home page" />
+                <Image
+                  src="/DeepThoughts-1.JPG"
+                  alt="deep thoughts home page"
+                  width={1500}
+                  height={1500}
+                />
                 <h3 className="text-lg font-medium pt-8 pb-2">Deep Thoughts</h3>
                 <p className="py-2">
                   Deep Thoughts is a React.js application that mimics a social
@@ -128,8 +132,10 @@ export default function Home() {
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
                 <Image
-                  src={ultimateone}
+                  src="/myultimatesportstracker-1.JPG"
                   alt="my ultimate sports tracker home page"
+                  width={1500}
+                  height={1500}
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2">
                   My Ultimate Sports Tracker
@@ -159,7 +165,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
-                <Image src={ultimatetwo} alt="carolina clovers home page" />
+                <Image
+                  src="/myultimatesportstracker-2.JPG"
+                  alt="carolina clovers home page"
+                  width={1500}
+                  height={1500}
+                />
                 <h3 className="text-lg font-medium pt-8 pb-2">
                   Carolina Clovers
                 </h3>
