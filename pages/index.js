@@ -19,21 +19,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={darkMode ? "dark" : ""}>
-        <div className="bg-white px-10 md:px-20 lg:px-40">
-          <section className="min-h-screen dark:bg-gray-900">
+        <div className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+          <section className="min-h-screen">
             <nav className="py-10 mb-12 flex justify-between">
-              <h1 className="text-xl font-burtons">developedbywilliam</h1>
+              <h1 className="text-xl font-burtons  dark:text-white">
+                developedbywilliam
+              </h1>
               <ul className="flex items-center">
                 <li>
                   <BsFillMoonStarsFill
-                    className="cursor-pointer text-xl"
-                    onClick={() => console.log("darkMode")}
+                    className="cursor-pointer text-xl dark:text-white"
+                    onClick={() => setDarkMode(!darkMode)}
                   />
                 </li>
                 <li>
                   <a
-                    className="bg-gradient-to-r from-cyan-1500 to-teal-1500 text-white px-4 py-2 rounded-md ml-8"
-                    href="#"
+                    className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                    href="/williamChalkResume.pdf"
+                    download
                   >
                     Resume
                   </a>
@@ -44,47 +47,55 @@ export default function Home() {
               <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
                 William Chalk
               </h2>
-              <h3 className="text-2xl py-2 md:text-3xl">Developer</h3>
-              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+              <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+                Developer
+              </h3>
+              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
                 Full Stack Web Developer with a strong desire for continuous
                 learning and development.
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-2 text-gray-600">
               <a href="https://www.linkedin.com/in/williamchalk/">
-                <BsLinkedin />
+                <BsLinkedin className="dark:text-white" />
               </a>
               <a href="https://github.com/william-chalk">
-                <BsGithub />
+                <BsGithub className="dark:text-white" />
               </a>
             </div>
           </section>
           {/* Second Page */}
           <section>
             <div>
-              <h3 className="text-3xl p-3 text-center">Projects</h3>
+              <h3 className="text-3xl p-3 text-center dark:text-white">
+                Projects
+              </h3>
             </div>
             <div className="lg:grid-cols-4">
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:shadow-white">
                 <Image
                   src="/Monied-1.JPG"
                   alt="monied home page"
                   width={1500}
                   height={1500}
                 />
-                <h3 className="text-lg font-medium pt-8 pb-2">Monied</h3>
-                <p className="py-2">
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
+                  Monied
+                </h3>
+                <p className="py-2 dark:text-white">
                   Monied is a fundraising platform for nonprofit organizations.
                   The goal is to help ambitious ideas be brought to life. Monied
                   will allow users to create projects with donation goals,
                   donate to projects, and keep track of their donations.
                 </p>
                 <h4 className="py-4 text-teal-600">Technologies Used</h4>
-                <p className="text-gray-800">React</p>
-                <p className="text-gray-800">GraphQL</p>
-                <p className="text-gray-800">Node.js</p>
-                <p className="text-gray-800">Express.js</p>
-                <p className="text-gray-800">Authentication (JWT)</p>
+                <p className="text-gray-800 dark:text-white">React</p>
+                <p className="text-gray-800 dark:text-white">GraphQL</p>
+                <p className="text-gray-800 dark:text-white">Node.js</p>
+                <p className="text-gray-800 dark:text-white">Express.js</p>
+                <p className="text-gray-800 dark:text-white">
+                  Authentication (JWT)
+                </p>
                 <p className="float-left text-teal-600">
                   <a href="https://aqueous-scrubland-12058.herokuapp.com/">
                     <BsGlobe />
@@ -98,25 +109,29 @@ export default function Home() {
                   </a>
                 </p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:shadow-white">
                 <Image
                   src="/DeepThoughts-1.JPG"
                   alt="deep thoughts home page"
                   width={1500}
                   height={1500}
                 />
-                <h3 className="text-lg font-medium pt-8 pb-2">Deep Thoughts</h3>
-                <p className="py-2">
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
+                  Deep Thoughts
+                </h3>
+                <p className="py-2 dark:text-white">
                   Deep Thoughts is a React.js application that mimics a social
                   media website where users can create an account, manage
                   friendships, and make posts
                 </p>
                 <h4 className="py-4 text-teal-600">Technologies Used</h4>
-                <p className="text-gray-800">React</p>
-                <p className="text-gray-800">GraphQL</p>
-                <p className="text-gray-800">Node.js</p>
-                <p className="text-gray-800">Express.js</p>
-                <p className="text-gray-800">Authentication (JWT)</p>
+                <p className="text-gray-800 dark:text-white">React</p>
+                <p className="text-gray-800 dark:text-white">GraphQL</p>
+                <p className="text-gray-800 dark:text-white">Node.js</p>
+                <p className="text-gray-800 dark:text-white">Express.js</p>
+                <p className="text-gray-800 dark:text-white">
+                  Authentication (JWT)
+                </p>
                 <p className="float-left text-teal-600">
                   <a href="https://mysterious-lake-82542.herokuapp.com/">
                     <BsGlobe />
@@ -130,27 +145,29 @@ export default function Home() {
                   </a>
                 </p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:shadow-white">
                 <Image
                   src="/myultimatesportstracker-1.JPG"
                   alt="my ultimate sports tracker home page"
                   width={1500}
                   height={1500}
                 />
-                <h3 className="text-lg font-medium pt-8 pb-2">
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                   My Ultimate Sports Tracker
                 </h3>
-                <p className="py-2">
+                <p className="py-2 dark:text-white">
                   My Ultimate Sports Tracker is used to generate a sports
                   dashboard where you can see today games, past games as well as
                   statistics.
                 </p>
                 <h4 className="py-4 text-teal-600">Technologies Used</h4>
-                <p className="text-gray-800">HTML</p>
-                <p className="text-gray-800">CSS</p>
-                <p className="text-gray-800">JavaScript</p>
-                <p className="text-gray-800">Bulma</p>
-                <p className="text-gray-800">Third Party APIs</p>
+                <p className="text-gray-800 dark:text-white">HTML</p>
+                <p className="text-gray-800 dark:text-white">CSS</p>
+                <p className="text-gray-800 dark:text-white">JavaScript</p>
+                <p className="text-gray-800 dark:text-white">Bulma</p>
+                <p className="text-gray-800 dark:text-white">
+                  Third Party APIs
+                </p>
                 <p className="float-left text-teal-600">
                   <a href="https://william-chalk.github.io/My-Ultimate-Sports-Tracker/">
                     <BsGlobe />
@@ -164,26 +181,28 @@ export default function Home() {
                   </a>
                 </p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:shadow-white">
                 <Image
                   src="/myultimatesportstracker-2.JPG"
                   alt="carolina clovers home page"
                   width={1500}
                   height={1500}
                 />
-                <h3 className="text-lg font-medium pt-8 pb-2">
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                   Carolina Clovers
                 </h3>
-                <p className="py-2">
+                <p className="py-2 dark:text-white">
                   Sports team page for little league team, Which allows an Admin
                   to upload announcements and images.
                 </p>
                 <h4 className="py-4 text-teal-600">Technologies Used</h4>
-                <p className="text-gray-800">React</p>
-                <p className="text-gray-800">Node.js</p>
-                <p className="text-gray-800">GraphQL</p>
-                <p className="text-gray-800">BootStrap</p>
-                <p className="text-gray-800">JWT Authentication</p>
+                <p className="text-gray-800 dark:text-white">React</p>
+                <p className="text-gray-800 dark:text-white">Node.js</p>
+                <p className="text-gray-800 dark:text-white">GraphQL</p>
+                <p className="text-gray-800 dark:text-white">BootStrap</p>
+                <p className="text-gray-800 dark:text-white">
+                  JWT Authentication
+                </p>
                 <p className="float-left text-teal-600">
                   <a href="https://william-chalk.github.io/My-Ultimate-Sports-Tracker/">
                     <BsGlobe />
