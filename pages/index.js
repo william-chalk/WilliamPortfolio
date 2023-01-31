@@ -1,11 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+"use client";
+import { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsGlobe } from "react-icons/bs";
+import deepthoughtsone from "../public/DeepThoughts-1.JPG";
+import deepthoughtstwo from "../public/DeepThoughts-2.JPG";
+import moniedone from "../public/Monied-1.JPG";
+import moniedtwo from "../public/Monied-2.JPG";
+import ultimateone from "../public/myultimatesportstracker-1.JPG";
+import ultimatetwo from "../public/myultimatesportstracker-2.JPG";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <>
       <Head>
@@ -14,110 +24,172 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+      <main className={darkMode ? "dark" : ""}>
+        <div className="bg-white px-10 md:px-20 lg:px-40">
+          <section className="min-h-screen dark:bg-gray-900">
+            <nav className="py-10 mb-12 flex justify-between">
+              <h1 className="text-xl font-burtons">developedbywilliam</h1>
+              <ul className="flex items-center">
+                <li>
+                  <BsFillMoonStarsFill
+                    className="cursor-pointer text-xl"
+                    onClick={() => console.log("darkMode")}
+                  />
+                </li>
+                <li>
+                  <a
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    href="#"
+                  >
+                    Resume
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div className="text-center p-10">
+              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+                William Chalk
+              </h2>
+              <h3 className="text-2xl py-2 md:text-3xl">Developer</h3>
+              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+                Full Stack Web Developer with a strong desire for continuous
+                learning and development.
+              </p>
+            </div>
+            <div className="text-5xl flex justify-center gap-16 py-2 text-gray-600">
+              <a href="https://www.linkedin.com/in/williamchalk/">
+                <BsLinkedin />
+              </a>
+              <a href="https://github.com/william-chalk">
+                <BsGithub />
+              </a>
+            </div>
+          </section>
+          {/* Second Page */}
+          <section>
+            <div>
+              <h3 className="text-3xl p-3 text-center">Projects</h3>
+            </div>
+            <div className="lg:grid-cols-4">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+                <Image src={moniedone} alt="monied home page" />
+                <h3 className="text-lg font-medium pt-8 pb-2">Monied</h3>
+                <p className="py-2">
+                  Monied is a fundraising platform for nonprofit organizations.
+                  The goal is to help ambitious ideas be brought to life. Monied
+                  will allow users to create projects with donation goals,
+                  donate to projects, and keep track of their donations.
+                </p>
+                <h4 className="py-4 text-teal-600">Technologies Used</h4>
+                <p className="text-gray-800">React</p>
+                <p className="text-gray-800">GraphQL</p>
+                <p className="text-gray-800">Node.js</p>
+                <p className="text-gray-800">Express.js</p>
+                <p className="text-gray-800">Authentication (JWT)</p>
+                <p className="float-left text-teal-600">
+                  <a href="https://aqueous-scrubland-12058.herokuapp.com/">
+                    <BsGlobe />
+                    View Live
+                  </a>
+                </p>
+                <p className="float-right text-teal-600">
+                  <a href="https://github.com/william-chalk/Monied">
+                    <BsGithub />
+                    View Repo
+                  </a>
+                </p>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+                <Image src={deepthoughtsone} alt="deep thoughts home page" />
+                <h3 className="text-lg font-medium pt-8 pb-2">Deep Thoughts</h3>
+                <p className="py-2">
+                  Deep Thoughts is a React.js application that mimics a social
+                  media website where users can create an account, manage
+                  friendships, and make posts
+                </p>
+                <h4 className="py-4 text-teal-600">Technologies Used</h4>
+                <p className="text-gray-800">React</p>
+                <p className="text-gray-800">GraphQL</p>
+                <p className="text-gray-800">Node.js</p>
+                <p className="text-gray-800">Express.js</p>
+                <p className="text-gray-800">Authentication (JWT)</p>
+                <p className="float-left text-teal-600">
+                  <a href="https://mysterious-lake-82542.herokuapp.com/">
+                    <BsGlobe />
+                    View Live
+                  </a>
+                </p>
+                <p className="float-right text-teal-600">
+                  <a href="https://github.com/william-chalk/DeepThoughts">
+                    <BsGithub />
+                    View Repo
+                  </a>
+                </p>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+                <Image
+                  src={ultimateone}
+                  alt="my ultimate sports tracker home page"
+                />
+                <h3 className="text-lg font-medium pt-8 pb-2">
+                  My Ultimate Sports Tracker
+                </h3>
+                <p className="py-2">
+                  My Ultimate Sports Tracker is used to generate a sports
+                  dashboard where you can see today games, past games as well as
+                  statistics.
+                </p>
+                <h4 className="py-4 text-teal-600">Technologies Used</h4>
+                <p className="text-gray-800">HTML</p>
+                <p className="text-gray-800">CSS</p>
+                <p className="text-gray-800">JavaScript</p>
+                <p className="text-gray-800">Bulma</p>
+                <p className="text-gray-800">Third Party APIs</p>
+                <p className="float-left text-teal-600">
+                  <a href="https://william-chalk.github.io/My-Ultimate-Sports-Tracker/">
+                    <BsGlobe />
+                    View Live
+                  </a>
+                </p>
+                <p className="float-right text-teal-600">
+                  <a href="https://github.com/william-chalk/My-Ultimate-Sports-Tracker">
+                    <BsGithub />
+                    View Repo
+                  </a>
+                </p>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+                <Image src={ultimatetwo} alt="carolina clovers home page" />
+                <h3 className="text-lg font-medium pt-8 pb-2">
+                  Carolina Clovers
+                </h3>
+                <p className="py-2">
+                  Sports team page for little league team, Which allows an Admin
+                  to upload announcements and images.
+                </p>
+                <h4 className="py-4 text-teal-600">Technologies Used</h4>
+                <p className="text-gray-800">React</p>
+                <p className="text-gray-800">Node.js</p>
+                <p className="text-gray-800">GraphQL</p>
+                <p className="text-gray-800">BootStrap</p>
+                <p className="text-gray-800">JWT Authentication</p>
+                <p className="float-left text-teal-600">
+                  <a href="https://william-chalk.github.io/My-Ultimate-Sports-Tracker/">
+                    <BsGlobe />
+                    View Live
+                  </a>
+                </p>
+                <p className="float-right text-teal-600">
+                  <a href="https://github.com/william-chalk/My-Ultimate-Sports-Tracker">
+                    <BsGithub />
+                    View Repo
+                  </a>
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </>
-  )
+  );
 }
