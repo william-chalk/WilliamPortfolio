@@ -1,7 +1,7 @@
 # My Portfolio
 
 # Description
-## This is my portolio that showcases my previous projects and work.
+## This is my portfolio that showcases my previous projects and work.
 
 # Technologies
 - NextJs
